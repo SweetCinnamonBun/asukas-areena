@@ -1,0 +1,72 @@
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  background-color: #d5ffd0;
+  height: 100vh;
+}
+
+/* NAVBAR SECTION*/
+
+.navbar-section {
+  background-color: aqua;
+  height: 3rem;
+}
+
+.navbar-section ul {
+  display: flex;
+}
+
+/* MESSAGES SECTION */
+
+.messages-section {
+  margin-block-start: 2rem;
+  padding-inline: 0.8rem 0.8rem;
+}
+
+.messages {
+  background-color: #fff0f5;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.messages h1 {
+  font-size: 2.4rem;
+  display: inline;
+}
+
+.messages span {
+  font-size: 1.6rem;
+  margin-inline-start: 4rem;
+  background-color: #ed2b2a;
+  padding: 0.5rem 0.9rem;
+  border-radius: 50%;
+  color: white;
+  padding-block-start: -1rem;
+}
+
+.messages p {
+  font-size: 1.2rem;
+}
+
+.write-message-btn {
+  margin-block-start: 1.4rem;
+}
+
+.messages button {
+  border-style: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #98eecc;
+}
+
+/* CALENDAR SECTION */
+.calendar-section {
+  background-color: aquamarine;
+}
