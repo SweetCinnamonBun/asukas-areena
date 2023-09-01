@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <title>navbar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="profile"></button>
+      <button class="dropdown-button">
+        <p>menu</p>
+      </button>
+      <div class="dropdown-content">
+        <!-- Dropdown items go here -->
+        <a href="#">Viestit</a>
+        <a href="#">Kalenteri</a>
+        <a href="#">Tiedotteet</a>
+      </div>
+    </nav>
+    <script>
+      // Get the button and dropdown content
+      const button = document.querySelector(".dropdown-button");
+      const dropdown = document.querySelector(".dropdown-content");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function () {
+        // Toggle the dropdown's display property
+        if (dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+        } else {
+          dropdown.style.display = "block";
+        }
+      });
+      // Close the dropdown when clicking outside of it
+      window.addEventListener("click", function (event) {
+        if (!event.target.matches(".dropdown-button")) {
+          dropdown.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
