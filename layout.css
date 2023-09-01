@@ -68,5 +68,74 @@ body {
 
 /* CALENDAR SECTION */
 .calendar-section {
-  background-color: aquamarine;
+  margin-block-start: 1.5rem;
+  padding-inline: 0.8rem 0.8rem;
+}
+
+.calendar {
+  background-color: #fff0f5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.calendar h1 {
+  font-size: 2.4rem;
+  text-align: start;
+}
+
+.calendar .month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.month i {
+  font-size: 1.4rem;
+  padding-inline: 1rem;
+}
+
+.calendar h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 50px;
+  margin-block-start: 1rem;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.calendar-grid div {
+  background-color: #98eecc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s linear;
+}
+
+.calendar-grid div:hover {
+  transform: translateY(-0.3rem);
+}
+
+.calendar-grid a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.calendar .marked {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.calendar .important {
+  background-color: #ee8383;
+  padding: 1rem;
 }
