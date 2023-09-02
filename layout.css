@@ -35,6 +35,8 @@ body {
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 10px gray;
+  display: flex;
+  align-items: center;
 }
 
 .messages h1 {
@@ -63,13 +65,16 @@ body {
 
 .write-message-btn {
   margin-block-start: 1.4rem;
-}
-
-.messages button {
   border-style: none;
   border-radius: 0.5rem;
-  padding: 0.5rem 0.8rem;
+  padding: 0.7rem 0.8rem;
   background-color: #98eecc;
+  font-weight: bold;
+}
+
+.button-div {
+  display: flex;
+  justify-content: end;
 }
 
 /* CALENDAR SECTION */
