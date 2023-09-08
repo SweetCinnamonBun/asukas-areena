@@ -21,7 +21,18 @@
   <body>
     <div class="wrapper">
       <section class="navbar-section">
-        <iframe src="navbar/navbar.html" frameborder="0" width="100%"></iframe>
+        <nav class="navbar">
+          <button class="profile"></button>
+          <button class="dropdown-button">
+            <i class="fa-solid fa-bars" style="color: #000000"></i>
+          </button>
+          <div class="dropdown-content">
+            <!-- Dropdown items go here -->
+            <a href="#">Viestit</a>
+            <a href="#">Kalenteri</a>
+            <a href="#">Tiedotteet</a>
+          </div>
+        </nav>
       </section>
       <section class="messages-section">
         <div class="button-div">
@@ -122,5 +133,6 @@
         </div>
       </section>
     </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
