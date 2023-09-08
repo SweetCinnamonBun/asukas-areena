@@ -24,20 +24,72 @@ img {
 }
 
 /* NAVBAR SECTION*/
-.navbar {
-  font-size: 1.6rem;
-}
 
-.navbar ul {
+.navbar {
+  background-color: #b4b884;
+  height: 4rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.navbar ul li {
-  padding: 1.2rem;
-  border: 2px solid black;
-  flex: 1 1 100%;
+/* Style the button */
+.dropdown-button {
+  background-color: #d9d9d9;
+  border: none;
+  min-height: 100%;
+  min-width: 4rem;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  padding: 20px 16px;
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-bottom: solid 1px;
+}
+
+.dropdown-items:hover {
+  background: white;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 5rem;
+  height: 100%;
+  background-image: url("/images/default-profile-img.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.profile:hover {
+  border: 1px solid black;
+}
+
+.dropdown-button:hover {
+  border: 1px solid black;
+}
+
+.navbar h1 {
+  font-size: large;
+}
+
+.text-logo {
+  text-decoration: none;
+  color: black;
 }
 
 /* MESSAGES SECTION */
