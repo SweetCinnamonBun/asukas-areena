@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+}
+
+.login-section {
+  background-color: slateblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://www.op-media.fi/contentassets/41af12c847134095aa56c0157ac7c2a3/paakuva.jpg?width=1000&height=800&rmode=crop&ranchor=center");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke;
+  opacity: 99%;
+  padding: 6rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.login-form h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-block-end: 4rem;
+}
+
+.login-form label {
+  font-size: 1.6rem;
+  margin: 1.2rem 0;
+}
+
+.login-form input {
+  padding: 0.8rem;
+  border: 2px solid black;
+}
+
+.login-button {
+  align-self: center;
+  margin-block-start: 2.5rem;
+  padding: 1rem 0.9rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #4591c4;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.login-btn-a {
+  color: rgb(248, 248, 248);
+}
+
+.login-form a {
+  align-self: center;
+  margin-block-start: 1.8rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
