@@ -86,11 +86,13 @@ img {
 
 .navbar h1 {
   font-size: large;
+  
+  
 }
 
 .text-logo {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* MESSAGES SECTION */
