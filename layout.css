@@ -94,8 +94,14 @@ body {
   align-items: center;
 }
 
-.messages h1 {
+.messages i {
   font-size: 2.4rem;
+  padding-inline-end: 1rem;
+  color: #2c5781;
+}
+
+.messages h1 {
+  font-size: 2.2rem;
   display: inline;
 }
 
@@ -175,7 +181,8 @@ body {
   justify-content: end;
 }
 
-.month i {
+#chevron-left,
+#chevron-right {
   font-size: 1.4rem;
   padding-block: 1.2rem;
   padding-inline: 1.4rem;
@@ -183,6 +190,12 @@ body {
   border-radius: 0.5rem;
   background-color: #16385b;
   color: white;
+}
+
+#calendar-icon {
+  font-size: 3rem;
+  padding-inline-end: 1rem;
+  color: #2c5781;
 }
 
 .calendar h2 {
