@@ -285,14 +285,21 @@ body {
 }
 
 .announcement {
-  background-color: #03c988;
   padding: 1rem;
   margin-block-end: 1rem;
+  border: 2px solid;
+}
+
+.announcement .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .announcement .posted {
   font-size: 1.2rem;
   padding-block-end: 0.5rem;
+  order: 1;
 }
 .announcement .heading {
   font-size: 1.8rem;
