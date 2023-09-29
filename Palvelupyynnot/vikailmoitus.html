@@ -42,12 +42,75 @@
                 <a class="dropdown-items" href="#">Tietosuojaseloste</a>
                 <a class="dropdown-items" href="/login/login.html">Kirjaudu ulos</a>
               </div>
-        </section>
-        
+
+            <!-- Request form with radio button -->  
+
+<div class="container">
+
+  
+  <h3>Palvelupyyntö</h3>
+
+  
+  
+  <form id="form">
+    <label for="fname">Asunto</label>
+    <input type="text" id="asunto" name="asunto" placeholder="">
 
 
+    <label for="vikailmoitus">Vikailmoitus</label>
+    <select id="vikailmoitus" name="vikailmoitus">
+      <option value="vesi">Vesi</option>
+      <option value="lammitys">Lämmitys</option>
+      <option value="sahko">Sähkö</option>
+      <option value="ilmanVaihto">Ilmanvaihto</option>
+      <option value="laitteet">Laitteet</option>
+      <option value="Muu">Muu</option>
+    </select>
+
+    <label for="aihe">Palvelupyynnön kuvaus</label>
+    <textarea id="subject" name="subject" placeholder="Teksti tänne..." style="height:200px"></textarea>
+
+    <div class="valitse">
+      <p>Seuranta</p>
+      <label>
+        <input type="radio" name="choice" value="text" /> Haluan saada tekstiviestejä työn etenemisestä
+    </label>
+    
+    <label>
+        <input type="radio" name="choice" value="tex" /> Haluan saada sähköposteja työn etenemisestä
+    </label>
+  
+</div>
+<div class="liite">
+  <span class="muut">Muut tiedot</span>
+
+  <div class="laatikko" role="button">
+<input multiple type="file" autocomplete="off" tabindex="-1" style="display: none;">
+<span class="pudota">Pudota liitteet tähän</span>
+
+
+    <div>
 
     </div>
+
+  </div>
+  
+
+</div>
+
+  <input type="submit" value="Lähetä">
+
+    
+  </form>
+  
+
+</div>
+
+        </section>
+
+        
+    </div>
+
     <script src="/scripts/main.js"></script>
 </body>
 </html>
