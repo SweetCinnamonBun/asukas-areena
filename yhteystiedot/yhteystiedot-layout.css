@@ -58,7 +58,7 @@ body {
   border-radius: 50%;
   width: 5rem;
   height: 100%;
-  background-image: url("images/default-profile-img.png");
+  background-image: url("/images/default-profile-img.png");
   background-size: cover;
   background-position: center;
   border: none;
@@ -75,6 +75,10 @@ body {
 
 .navbar h1 {
   font-size: large;
+}
+
+.text-logo {
+  text-decoration: none;
   color: white;
 }
 
