@@ -81,24 +81,23 @@ body {
 /* Contact and map section */
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns, left and right */
-  gap: 20px; /* Gap between columns */
+  display: flex;
+  flex-direction: column;
+  height: 90%;
 }
 
 .contact-info {
-  background-color: #f0f0f0; /* Optional background color for the left side */
-  padding: 20px;
+  padding-top: 5rem;
+  flex: 1;
 }
 
 .contact-box {
-  margin-bottom: 20px; /* Spacing between contact info boxes */
+  margin-bottom: 5rem;
+  font-size: large;
+  text-align: center;
 }
 
-.map-container {
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
+.map-box {
+  text-align: center;
+  flex: 1;
 }
