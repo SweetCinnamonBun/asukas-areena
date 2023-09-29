@@ -78,6 +78,11 @@ body {
   color: white;
 }
 
+.text-logo {
+  text-decoration: none;
+  color: white;
+}
+
 /* MESSAGES SECTION */
 
 .messages-section {
