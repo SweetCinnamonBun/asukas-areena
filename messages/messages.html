@@ -46,6 +46,22 @@
         <div class="possible-sidenav">Sidenav</div>
         <section class="messages-section">
           <div class="messages-container">
+            <div class="all-messages">
+              <div class="message-title-amount">
+                <span class="message-amount">Viestit</span>
+                <span class="amount">(40)</span>
+              </div>
+              <div class="sort-icon-div">
+                <span class="sort">Lajittele</span>
+                <i id="sort-icon" class="fa-solid fa-sort"
+                  ><ul class="sort-dropdown-content">
+                    <li><a href="#">Uusimmat</a></li>
+                    <li><a href="#">Lukemattomat</a></li>
+                    <li><a href="#">Vanhimmat</a></li>
+                  </ul></i
+                >
+              </div>
+            </div>
             <div class="search-messages">
               <div class="icon-div">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -59,17 +75,17 @@
               <a href="#">Arkistot</a>
             </div>
             <div class="messages">
-              <a href="messages-view.html">
-                <div class="message">
-                  <div class="message-body">
-                    <div class="container">
-                      <div>
-                        <h1 class="username">Admin</h1>
-                        <span class="new-message">Uusi</span>
-                      </div>
-                      <span class="timestamp">10:45 19.9</span>
+              <div class="message">
+                <div class="message-body">
+                  <div class="container">
+                    <div>
+                      <h1 class="username">Admin</h1>
+                      <span class="new-message">Uusi</span>
                     </div>
-                    <div class="container2">
+                    <span class="timestamp">10:45 19.9</span>
+                  </div>
+                  <div class="container2">
+                    <a href="/messages/messages-view.html">
                       <div>
                         <h1 class="title">Uudet käyttäjätunnukset</h1>
                         <p>
@@ -78,11 +94,20 @@
                           sapiente.
                         </p>
                       </div>
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
+                    </a>
+                    <i
+                      id="messages-ellipsis"
+                      class="fa-solid fa-ellipsis-vertical"
+                      ><ul class="ellipsis-dropdown">
+                        <li><a href="#">Vastaa</a></li>
+                        <li><a href="#">Lähetä edelleen</a></li>
+                        <li><a href="#">Arkistoi</a></li>
+                        <li><a href="#">Poista</a></li>
+                      </ul></i
+                    >
                   </div>
                 </div>
-              </a>
+              </div>
               <div class="message">
                 <div class="message-body">
                   <div class="container">
@@ -349,5 +374,6 @@
       </div>
     </div>
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/messages.js"></script>
   </body>
 </html>

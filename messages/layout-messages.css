@@ -102,6 +102,56 @@ img {
 .messages-section {
 }
 
+.all-messages {
+  background-color: white;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+}
+
+.sort-icon-div {
+  display: flex;
+  align-items: center;
+}
+
+.sort {
+  font-size: 1.3rem;
+}
+
+#sort-icon {
+  position: relative;
+  padding: 0.4rem 1rem;
+  border-radius: 50%;
+}
+
+#sort-icon:hover {
+  background-color: gray;
+}
+
+.sort-dropdown-content {
+  display: none;
+  font-size: 1.2rem;
+  position: absolute;
+  border: 1px solid slateblue;
+  top: 2.5rem;
+  right: 0.3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.sort-dropdown-content li {
+  padding: 1.5rem 2rem;
+  font-family: "Rubik", sans-serif;
+  border-bottom: 1px solid gray;
+}
+
+.sort-dropdown-content li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
 .search-messages {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -136,6 +186,9 @@ input {
   border: 0.5px solid black;
   flex: 1 1 100%;
   text-align: center;
+  border-radius: 8px;
+  margin-right: 0.3rem;
+  margin-block: 0.5rem;
 }
 
 .top-bar a:first-child {
@@ -190,9 +243,40 @@ input {
 }
 
 .container2 i {
-  padding-inline-end: 2rem;
-  padding-block-start: 1rem;
+  /* padding-inline-end: 2rem;
+  padding-block-start: 1rem; */
+  padding: 0.7rem 1.2rem;
   font-size: 1.6rem;
+  position: relative;
+  border-radius: 50%;
+}
+
+.container2 i:hover {
+  background-color: rgb(65, 63, 63);
+  color: white;
+}
+
+.ellipsis-dropdown {
+  display: none;
+  font-size: 1.2rem;
+  position: absolute;
+  border: 1px solid slateblue;
+  top: 3.2rem;
+  right: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.ellipsis-dropdown li {
+  padding: 1.5rem 2rem;
+  font-family: "Rubik", sans-serif;
+  border-bottom: 1px solid gray;
+}
+
+.ellipsis-dropdown li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
 }
 
 .message-body .username {
