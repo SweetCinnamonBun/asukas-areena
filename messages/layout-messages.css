@@ -107,6 +107,7 @@ img {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3rem 1.5rem;
 }
 
