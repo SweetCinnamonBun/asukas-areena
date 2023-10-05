@@ -2,6 +2,11 @@ const ellipsis = document.querySelector("#messages-ellipsis");
 const dropDownContent = document.querySelector(".ellipsis-dropdown");
 const sort = document.querySelector("#sort-icon");
 const sortDropDownContent = document.querySelector(".sort-dropdown-content")
+const messageModal = document.querySelector(".new-message-modal");
+const openMessageModal = document.querySelector(".write-message");
+const closeMessageModal = document.querySelector(".close-modal");
+const closeMessageModal2 = document.querySelector("#send-message");
+
 
 ellipsis.addEventListener("click", function (event) {
     toggleDropdownEllipsis();
@@ -51,3 +56,15 @@ function toggleDropdownSort() {
 
   });
   
+
+openMessageModal.addEventListener("click", () => {
+  messageModal.showModal();
+});
+
+closeMessageModal.addEventListener("click", () => {
+  messageModal.close();
+})
+
+closeMessageModal2.addEventListener("click", () => {
+  messageModal.close();
+})

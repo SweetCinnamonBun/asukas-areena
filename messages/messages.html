@@ -387,6 +387,32 @@
             </div>
           </section>
         </section>
+        <dialog class="new-message-modal">
+          <div class="modal-container">
+            <div class="top-container">
+              <h1>Uusi Viesti</h1>
+              <button class="close-modal"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="write-message-body">
+              <label for="vastaanottaja">Vastaanottaja: </label>
+              <input type="text" id="vastaanottaja" />
+              <label for="aihe">Aihe:</label>
+              <input type="text" id="aihe" />
+              <textarea
+                name="type-message"
+                id="type-message"
+                cols="30"
+                rows="20"
+              ></textarea>
+              <div class="new-message-buttons">
+                <button class="save-for-later">Tallenna Luonnoksiin</button>
+                <button id="send-message">
+                  <i class="fa-solid fa-paper-plane"></i>Lähetä
+                </button>
+              </div>
+            </div>
+          </div>
+        </dialog>
       </div>
     </div>
     <script src="/scripts/main.js"></script>

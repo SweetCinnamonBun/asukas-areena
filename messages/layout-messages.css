@@ -499,6 +499,99 @@ input {
   font-size: 1.4rem;
 }
 
+.new-message-modal {
+  height: 700px;
+  width: 500px;
+  border: none;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 4rem;
+}
+
+.top-container h1 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.top-container h1::after {
+  content: "";
+  background-color: #8ba0d4;
+  height: 0.3rem;
+  display: block;
+}
+
+.top-container button {
+  margin: 1rem 0;
+}
+
+.write-message-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #d6ddf0;
+  padding: 1.5rem 0.9rem;
+  border-radius: 8px;
+}
+
+.modal-container label {
+  margin-block-end: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.modal-container #vastaanottaja,
+#aihe {
+  margin-block-end: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.new-message-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 3rem;
+}
+
+.close-modal {
+  align-self: end;
+}
+
+.new-message-modal::backdrop {
+  background-color: black;
+  opacity: 0.5;
+}
+
+#send-message {
+  border: none;
+  background-color: #6499e9;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#send-message i {
+  padding-inline-end: 1rem;
+}
+
+.save-for-later {
+  border: none;
+  background-color: #ffcc70;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: medium;
+}
+
 /* @media only screen and (min-width: 809px) {
   .messages-container {
     padding-inline: 10rem;
