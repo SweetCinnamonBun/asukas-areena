@@ -7,6 +7,11 @@ const openMessageModal = document.querySelector(".write-message");
 const openMessageModal2 = document.querySelector(".write-new-message-button");
 const closeMessageModal = document.querySelector(".close-modal");
 const closeMessageModal2 = document.querySelector("#send-message");
+const serviceModal = document.querySelector(".new-service-modal");
+const openServiceModal = document.querySelector(".write-new-service-button");
+const closeServiceModal = document.querySelector(".close-service-modal");
+const openServiceModal2 = document.querySelector(".write-new-service-button-desktop");
+const closeServiceModal2 = document.querySelector(".service-send-button");
 
 
 ellipsis.addEventListener("click", function (event) {
@@ -72,4 +77,21 @@ closeMessageModal.addEventListener("click", () => {
 
 closeMessageModal2.addEventListener("click", () => {
   messageModal.close();
+})
+
+
+openServiceModal.addEventListener("click", () => {
+  serviceModal.showModal();
+})
+
+openServiceModal2.addEventListener("click", () => {
+  serviceModal.showModal();
+})
+
+closeServiceModal.addEventListener("click", () => {
+  serviceModal.close();
+})
+
+closeServiceModal2.addEventListener("click", () => {
+  serviceModal.close();
 })

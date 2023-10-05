@@ -49,6 +49,9 @@
           <div class="palvelupyynnöt-desktop">Palvelupyynnöt</div>
         </div>
         <div class="flex2">
+          <button class="write-new-service-button-desktop">
+            Uusi Palvelupyyntö
+          </button>
           <button class="write-message">
             <i class="fa-solid fa-pencil"></i>Uusi viesti
           </button>
@@ -63,6 +66,9 @@
               <div class="palvelupyynnöt">Palvelupyynnöt</div>
             </div>
             <div class="write-new-message">
+              <button class="write-new-service-button">
+                Uusi Palvelupyyntö
+              </button>
               <button class="write-new-message-button">
                 <i class="fa-solid fa-pencil"></i>Uusi Viesti
               </button>
@@ -416,6 +422,74 @@
                 </button>
               </div>
             </div>
+          </div>
+        </dialog>
+        <dialog class="new-service-modal">
+          <div class="service-modal-container">
+            <div class="service-modal-top">
+              <h3>Palvelupyyntö</h3>
+              <button class="close-service-modal">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <form id="form">
+              <label class="label-heading" for="fname">Asunto</label>
+              <input type="text" id="asunto" name="asunto" placeholder="" />
+
+              <label class="label-heading" for="vikailmoitus"
+                >Vikailmoitus</label
+              >
+              <select id="vikailmoitus" name="vikailmoitus">
+                <option value="vesi">Vesi</option>
+                <option value="lammitys">Lämmitys</option>
+                <option value="sahko">Sähkö</option>
+                <option value="ilmanVaihto">Ilmanvaihto</option>
+                <option value="laitteet">Laitteet</option>
+                <option value="Muu">Muu</option>
+              </select>
+
+              <label class="label-heading" for="aihe"
+                >Palvelupyynnön kuvaus</label
+              >
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Teksti tänne..."
+                style="height: 200px"
+              ></textarea>
+
+              <div class="valitse">
+                <p>Seuranta</p>
+                <div class="choice-label-container">
+                  <label class="choice-label">
+                    <input type="radio" name="choice" value="text" /> Haluan
+                    saada tekstiviestejä työn etenemisestä
+                  </label>
+
+                  <label class="choice-label">
+                    <input type="radio" name="choice" value="text" /> Haluan
+                    saada sähköposteja työn etenemisestä
+                  </label>
+                </div>
+              </div>
+              <div class="liite">
+                <span class="muut">Muut tiedot</span>
+
+                <div class="laatikko" role="button">
+                  <input
+                    multiple
+                    type="file"
+                    autocomplete="off"
+                    tabindex="-1"
+                  />
+                  <span class="pudota">Pudota liitteet tähän</span>
+                </div>
+              </div>
+              <div class="service-modal-buttons">
+                <button class="service-decline-button">Peruuta</button>
+                <button class="service-send-button">Lähetä</button>
+              </div>
+            </form>
           </div>
         </dialog>
       </div>

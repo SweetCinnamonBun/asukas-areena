@@ -612,11 +612,136 @@ input {
   font-weight: medium;
 }
 
+.new-service-modal {
+  height: 700px;
+  width: 500px;
+  border: none;
+}
+
+.new-service-modal::backdrop {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.service-modal-container {
+}
+
+.service-modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-modal-top h3 {
+  font-size: 2.2rem;
+  padding: 1.5rem 0;
+}
+
+.service-modal-container form {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 2rem;
+}
+
+.service-modal-container form .label-heading {
+  font-size: 1.8rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1.2rem;
+}
+
+.service-modal-container #vikailmoitus {
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid transparent;
+  border-color: transparent transparent rgb(5, 5, 5) transparent;
+}
+
+.service-modal-container form input {
+  margin-block-end: 1rem;
+  border: 2px solid transparent;
+  border-color: transparent transparent rgb(5, 5, 5) transparent;
+}
+
+.valitse {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.choice-label-container {
+  margin-block-start: 0.7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.valitse p {
+  font-size: 1.8rem;
+}
+
+.valitse .choice-label {
+  font-size: 1.4rem;
+}
+
+.liite {
+  margin-block: 1rem 1.5rem;
+}
+
+.liite .muut {
+  font-size: 1.8rem;
+}
+
+.liite .laatikko {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border: dotted;
+  margin-block-start: 1rem;
+}
+
+.pudota {
+  font-size: 1.4rem;
+}
+
+.liite .laatikko input {
+  padding: 3rem 4rem;
+  border: none;
+}
+
+.service-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.service-decline-button {
+  background-color: black;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.service-send-button {
+  background-color: #362fd9;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
 /* @media only screen and (min-width: 809px) {
   .messages-container {
     padding-inline: 10rem;
   }
 } */
+
+@media only screen and (min-width: 550px) {
+  .new-service-modal {
+    padding: 1.5rem 3rem;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .grid-container {
@@ -659,6 +784,10 @@ input {
 
   .write-new-message {
     display: none;
+  }
+
+  .new-service-modal {
+    padding: 1.5rem 3rem;
   }
 }
 
