@@ -4,6 +4,7 @@ const sort = document.querySelector("#sort-icon");
 const sortDropDownContent = document.querySelector(".sort-dropdown-content")
 const messageModal = document.querySelector(".new-message-modal");
 const openMessageModal = document.querySelector(".write-message");
+const openMessageModal2 = document.querySelector(".write-new-message-button");
 const closeMessageModal = document.querySelector(".close-modal");
 const closeMessageModal2 = document.querySelector("#send-message");
 
@@ -58,6 +59,10 @@ function toggleDropdownSort() {
   
 
 openMessageModal.addEventListener("click", () => {
+  messageModal.showModal();
+});
+
+openMessageModal2.addEventListener("click", () => {
   messageModal.showModal();
 });
 

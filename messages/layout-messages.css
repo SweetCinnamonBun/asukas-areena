@@ -135,9 +135,10 @@ img {
   padding: 1.5rem 1.7rem;
   margin-inline-end: 2rem;
   border-radius: 8px;
-  background-color: #2c5781;
-  color: white;
+  background-color: #a6f6ff;
+  color: black;
   font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .write-message i {
@@ -183,13 +184,32 @@ img {
   border-radius: 1rem;
 }
 
+.write-new-message {
+  padding: 2.5rem 1.3rem 0.5rem 1.3rem;
+  background-color: white;
+  text-align: end;
+}
+
+.write-new-message-button {
+  background-color: #a6f6ff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.write-new-message-button i {
+  padding-inline-end: 0.5rem;
+}
+
 .all-messages {
   background-color: white;
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .sort-icon-div {
@@ -635,6 +655,10 @@ input {
   .select-messaging-desktop {
     display: flex;
     margin-block-end: 1rem;
+  }
+
+  .write-new-message {
+    display: none;
   }
 }
 
