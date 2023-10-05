@@ -3,15 +3,6 @@ html {
   font-family: "Rubik", sans-serif;
 }
 
-body {
-  height: 100vh;
-}
-
-.wrapper {
-  background-color: #b9c4df;
-  height: 100vh;
-}
-
 /* NAVBAR SECTION*/
 
 .navbar {
@@ -86,13 +77,14 @@ body {
 
 .contact-grid {
   display: flex;
-  flex-direction: column;
-  height: 90%;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #b9c4df;
 }
 
 .contact-info {
-  padding-top: 5rem;
   flex: 1;
+  margin: auto;
 }
 
 .contact-box {
@@ -104,4 +96,33 @@ body {
 .map-box {
   text-align: center;
   flex: 1;
+  padding-top: 2rem;
+}
+
+/* Media queries */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .contact-grid {
+    display: block;
+    height: 100vh;
+  }
+  .map-box {
+    padding-top: 0;
+    height: 100%;
+    background: inherit;
+  }
+  .contact-box {
+    margin-bottom: 3rem;
+  }
+  .contact-info {
+    padding-top: 2rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .map-box {
+    height: 90%;
+  }
 }
