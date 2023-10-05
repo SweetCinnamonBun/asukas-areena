@@ -102,6 +102,87 @@ img {
 .messages-section {
 }
 
+.select-messaging-desktop {
+  display: none;
+  background-color: white;
+  box-shadow: 1px 1px 2px rgb(160, 159, 159);
+  border-bottom: 1px solid black;
+  font-size: 2.2rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.select-messaging-desktop > * {
+  flex: 1 1 100%;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  margin-inline-start: 2rem;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.write-message {
+  border: none;
+  padding: 1.5rem 1.7rem;
+  margin-inline-end: 2rem;
+  border-radius: 8px;
+  background-color: #2c5781;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.write-message i {
+  padding-inline-end: 0.5rem;
+}
+
+.select-messaging-desktop .flex1 > * {
+  border: 1px solid purple;
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-radius: 8px;
+  margin-inline-end: 1rem;
+}
+
+/* .select-messaging-desktop .select-messaging {
+  display: flex;
+
+  background-color: white;
+  box-shadow: 1px 1px 2px rgb(160, 159, 159);
+  border-bottom: 1px solid black;
+} */
+
+.select-messaging {
+  display: flex;
+  background-color: white;
+}
+
+.select-messaging > * {
+  border: 1px solid rgb(5, 5, 5);
+  font-size: 1.9rem;
+  padding: 1.5rem 1.5rem;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.select-messaging .viestit::after {
+  content: "";
+  background-color: rgb(50, 50, 221);
+  height: 0.5rem;
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-block-start: 0.5rem;
+  border-radius: 1rem;
+}
+
 .all-messages {
   background-color: white;
   font-size: 1.8rem;
@@ -135,8 +216,8 @@ img {
   font-size: 1.2rem;
   position: absolute;
   border: 1px solid slateblue;
-  top: 2.5rem;
-  right: 0.3rem;
+  top: 3.5rem;
+  right: 1.4rem;
   background-color: white;
   border-radius: 0.5rem;
 }
@@ -156,6 +237,8 @@ img {
 .search-messages {
   display: grid;
   grid-template-columns: min-content 1fr;
+  background-color: white;
+  padding-block-end: 1.5rem;
 }
 
 .icon-div {
@@ -164,10 +247,16 @@ img {
   align-items: center;
 }
 
+#search-message-field {
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
 .search-messages i {
   padding: 1.5rem;
-  background-color: white;
+  background-color: rgb(255, 253, 253);
   font-size: 1.2rem;
+  border-radius: 1rem;
 }
 
 input {
@@ -190,6 +279,12 @@ input {
   border-radius: 8px;
   margin-right: 0.3rem;
   margin-block: 0.5rem;
+  transition-property: background;
+  transition-duration: 0.3s;
+}
+
+.top-bar a:hover {
+  background-color: gray;
 }
 
 .top-bar a:first-child {
@@ -205,8 +300,15 @@ input {
 .message {
   background-color: white;
   padding: 2rem 0.5rem;
-  box-shadow: 1px 1px 2px gray;
+  box-shadow: 1px 1px 2px rgb(160, 159, 159);
   border-bottom: 1px solid black;
+  transition-property: background;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: rgb(228, 224, 224);
 }
 
 .message .container {
@@ -250,6 +352,8 @@ input {
   font-size: 1.6rem;
   position: relative;
   border-radius: 50%;
+  transition-property: background;
+  transition-duration: 0.5s;
 }
 
 .container2 i:hover {
@@ -266,6 +370,8 @@ input {
   right: 2rem;
   background-color: white;
   border-radius: 0.5rem;
+  transition-property: inherit;
+  transition-duration: 0.5s;
 }
 
 .ellipsis-dropdown li {
@@ -301,7 +407,6 @@ input {
 }
 
 .read-message-desktop {
-  margin-block-start: 1rem;
   background-color: white;
   display: none;
 }
@@ -403,27 +508,75 @@ input {
 @media only screen and (min-width: 1000px) {
   .grid-container {
     display: grid;
-    grid-template-columns: 250px 1.5fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 1rem;
     height: 100%;
-  }
-
-  .possible-sidenav {
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    width: 100%;
+    margin: auto;
   }
 
   .read-message-desktop {
     display: block;
-    margin-block-start: 0;
-    grid-column: 3 / 4;
+    grid-column: 2 / -1;
     grid-row: 1 / -1;
   }
 
   .messages-section {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / -1;
     overflow: scroll;
+  }
+
+  .select-messaging {
+    display: none;
+  }
+
+  .viestit-desktop::after {
+    content: "";
+    background-color: blue;
+    height: 0.5rem;
+    display: block;
+  }
+
+  .select-messaging-desktop {
+    display: flex;
+    margin-block-end: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .grid-container {
+    margin: auto;
+    margin-block-start: 1rem;
+  }
+
+  .select-messaging-desktop {
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .grid-container {
+    width: 80%;
+    margin: auto;
+    margin-block-start: 1rem;
+  }
+
+  .select-messaging-desktop {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .grid-container {
+    width: 72%;
+    margin: auto;
+    margin-block-start: 1rem;
+  }
+
+  .select-messaging-desktop {
+    width: 72%;
+    margin: auto;
   }
 }

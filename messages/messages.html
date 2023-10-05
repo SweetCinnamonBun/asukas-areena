@@ -42,10 +42,26 @@
           <a class="dropdown-items" href="/login/login.html">Kirjaudu ulos</a>
         </div>
       </section>
+      <div class="select-messaging-desktop">
+        <div class="flex1">
+          <div class="viestit-desktop">Viestit</div>
+          <div class="tiedotteet-desktop">Tiedotteet</div>
+          <div class="palvelupyynnöt-desktop">Palvelupyynnöt</div>
+        </div>
+        <div class="flex2">
+          <button class="write-message">
+            <i class="fa-solid fa-pencil"></i>Kirjoita uusi viesti
+          </button>
+        </div>
+      </div>
       <div class="grid-container">
-        <div class="possible-sidenav">Sidenav</div>
         <section class="messages-section">
           <div class="messages-container">
+            <div class="select-messaging">
+              <div class="viestit">Viestit</div>
+              <div class="tiedotteet">Tiedotteet</div>
+              <div class="palvelupyynnöt">Palvelupyynnöt</div>
+            </div>
             <div class="all-messages">
               <div class="message-title-amount">
                 <span class="message-amount">Viestit</span>
@@ -66,7 +82,7 @@
               <div class="icon-div">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
-              <input type="text" />
+              <input id="search-message-field" type="text" />
             </div>
             <div class="top-bar">
               <a href="#">Saapuneet</a>
