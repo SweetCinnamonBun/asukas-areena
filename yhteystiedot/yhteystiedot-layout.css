@@ -26,8 +26,13 @@ html {
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+  width: 95%;
   display: none;
-  background-color: #f1f1f1;
+  background-color: #2c5781;
+  border-radius: 8px;
 }
 
 /* Style the dropdown links */
@@ -35,29 +40,20 @@ html {
   padding: 20px 16px;
   display: block;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 1.6rem;
   border-bottom: solid 1px;
+  transition: background 0.1s ease-in;
+}
+
+.dropdown-content a:last-of-type {
+  border-bottom: none;
 }
 
 .dropdown-items:hover {
-  background: white;
-}
-
-.profile {
-  border-radius: 50%;
-  width: 5rem;
-  height: 100%;
-  background-image: url("/images/default-profile-img.png");
-  background-size: cover;
-  background-position: center;
-  border: none;
-  cursor: pointer;
-}
-
-.profile:hover {
-  border: 1px solid black;
+  background: rgb(226, 223, 223);
+  color: black;
 }
 
 .dropdown-button:hover {
@@ -66,6 +62,7 @@ html {
 
 .navbar h1 {
   font-size: large;
+  margin: auto;
 }
 
 .text-logo {
