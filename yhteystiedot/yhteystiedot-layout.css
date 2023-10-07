@@ -5,6 +5,11 @@ html {
 
 /* NAVBAR SECTION*/
 
+.hidden-div {
+  color: transparent;
+  width: 4rem;
+}
+
 .navbar {
   background-color: #2c5781;
   height: 4rem;
@@ -14,8 +19,7 @@ html {
   justify-content: space-between;
 }
 
-/* Style the button */
-.dropdown-button {
+/* .dropdown-button {
   background-color: whitesmoke;
   border: none;
   min-height: 100%;
@@ -24,7 +28,6 @@ html {
   border-radius: 0.5rem;
 }
 
-/* Style the dropdown content (hidden by default) */
 .dropdown-content {
   position: absolute;
   top: 7rem;
@@ -35,7 +38,6 @@ html {
   border-radius: 8px;
 }
 
-/* Style the dropdown links */
 .dropdown-content a {
   padding: 20px 16px;
   display: block;
@@ -58,16 +60,15 @@ html {
 
 .dropdown-button:hover {
   border: 1px solid black;
-}
+} */
 
 .navbar h1 {
   font-size: large;
   margin: auto;
 }
 
-.text-logo {
-  text-decoration: none;
-  color: white;
+.logo img {
+  max-height: 5rem;
 }
 
 /* Contact and map section */
@@ -99,6 +100,7 @@ html {
 /* Media queries */
 
 /* Mobile */
+
 @media screen and (max-width: 767px) {
   .contact-grid {
     display: block;
@@ -115,11 +117,145 @@ html {
   .contact-info {
     padding-top: 2rem;
   }
+
+  /* NAVBAR SECTION*/
+
+  .navbar {
+    background-color: #2c5781;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Style the button */
+  .dropdown-button {
+    background-color: whitesmoke;
+    border: none;
+    min-height: 100%;
+    min-width: 4rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    position: absolute;
+    top: 7rem;
+    right: 1.5rem;
+    width: 95%;
+    display: none;
+    background-color: #2c5781;
+    border-radius: 8px;
+  }
+
+  /* Style the dropdown links */
+  .dropdown-content a {
+    padding: 20px 16px;
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-bottom: solid 1px;
+    transition: background 0.1s ease-in;
+  }
+
+  .dropdown-content a:last-of-type {
+    border-bottom: none;
+  }
+
+  .dropdown-items:hover {
+    background: rgb(226, 223, 223);
+    color: black;
+  }
+
+  .dropdown-button:hover {
+    border: 1px solid black;
+  }
+
+  .navbar h1 {
+    font-size: large;
+    margin: auto;
+  }
+
+  .text-logo {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .map-box {
     height: 90%;
+  }
+
+  /* NAVBAR SECTION*/
+
+  .navbar {
+    background-color: #2c5781;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Style the button */
+  .dropdown-button {
+    background-color: whitesmoke;
+    border: none;
+    min-height: 100%;
+    min-width: 4rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    position: absolute;
+    top: 7rem;
+    right: 1.5rem;
+    width: 35%;
+    display: none;
+    background-color: #2c5781;
+    border-radius: 8px;
+  }
+
+  /* Style the dropdown links */
+  .dropdown-content a {
+    padding: 20px 16px;
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-bottom: solid 1px;
+    transition: background 0.1s ease-in;
+  }
+
+  .dropdown-content a:last-of-type {
+    border-bottom: none;
+  }
+
+  .dropdown-items:hover {
+    background: rgb(226, 223, 223);
+    color: black;
+  }
+
+  .dropdown-button:hover {
+    border: 1px solid black;
+  }
+
+  .navbar h1 {
+    font-size: large;
+    margin: auto;
+  }
+
+  .text-logo {
+    text-decoration: none;
+    color: white;
   }
 }
