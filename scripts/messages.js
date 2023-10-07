@@ -15,6 +15,10 @@ const closeServiceModal2 = document.querySelector(".service-send-button");
 const messageRead = document.querySelectorAll(".message-read");
 const messageReadSpan = document.querySelectorAll(".message-read .new-message");
 
+const tiedotteet = document.querySelector(".tiedotteet");
+const tiedotteetAfter = window.getComputedStyle(tiedotteet, '::after');
+
+
 messageReadSpan.forEach(x => {
   x.setAttribute("style", "background-color: transparent; color: transparent");
 })
