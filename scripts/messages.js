@@ -12,7 +12,16 @@ const openServiceModal = document.querySelector(".write-new-service-button");
 const closeServiceModal = document.querySelector(".close-service-modal");
 const openServiceModal2 = document.querySelector(".write-new-service-button-desktop");
 const closeServiceModal2 = document.querySelector(".service-send-button");
+const messageRead = document.querySelectorAll(".message-read");
+const messageReadSpan = document.querySelectorAll(".message-read .new-message");
 
+messageReadSpan.forEach(x => {
+  x.setAttribute("style", "background-color: transparent; color: transparent");
+})
+
+messageRead.forEach(x => {
+  x.setAttribute("style", "background-color: rgb(228, 224, 224);");
+})
 
 ellipsis.addEventListener("click", function (event) {
     toggleDropdownEllipsis();

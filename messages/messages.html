@@ -102,11 +102,11 @@
               <a href="#">Arkistot</a>
             </div>
             <div class="messages">
-              <div class="message">
+              <div class="message new-message">
                 <div class="message-body">
                   <div class="container">
                     <div>
-                      <h1 class="username">Admin</h1>
+                      <h1 class="username">Masa Mainio</h1>
                       <span class="new-message">Uusi</span>
                     </div>
                     <span class="timestamp">10:45 19.9</span>
@@ -114,7 +114,10 @@
                   <div class="container2">
                     <a href="/messages/messages-view.html">
                       <div>
-                        <h1 class="title">Uudet käyttäjätunnukset</h1>
+                        <h1 class="title">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aspernatur alias totam animi?
+                        </h1>
                         <p>
                           Lorem, ipsum dolor sit amet consectetur adipisicing
                           elit. Voluptatibus maxime ut tenetur? Quo, laborum
@@ -135,7 +138,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message new-message">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -157,7 +160,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message new-message">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -179,7 +182,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message message-read">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -204,7 +207,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message message-read">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -229,7 +232,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message message-read">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -254,7 +257,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message message-read">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -279,7 +282,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message message-read">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -304,7 +307,7 @@
                   </div>
                 </div>
               </div>
-              <div class="message">
+              <div class="message message-read">
                 <div class="message-body">
                   <div class="container">
                     <div>
@@ -341,7 +344,7 @@
             </div>
             <div class="sender">
               <span>Lähettäjä:</span>
-              <span>Hannes Mattila</span>
+              <span>Masa Mainio</span>
             </div>
             <div class="read-message-timestamp">
               <span>Lähetetty:</span>
@@ -361,11 +364,13 @@
                 nemo et reprehenderit odio vitae necessitatibus illum maiores ad
                 commodi vero, quam, minus temporibus molestias?
               </p>
-              <p class="end">Terveisin, Hannes Mattila</p>
+              <p class="end">Terveisin, Masa Mainio</p>
             </div>
             <div class="files-container">
               <div class="file">
-                <i id="paperclip" class="fa-solid fa-paperclip"></i>
+                <div class="paper-clip-container">
+                  <i id="paperclip" class="fa-solid fa-paperclip"></i>
+                </div>
                 <div class="container">
                   <p class="filename">Image.jpg</p>
                   <p class="filesize">2.2MB</p>
@@ -417,9 +422,12 @@
               ></textarea>
               <div class="new-message-buttons">
                 <button class="save-for-later">Tallenna Luonnoksiin</button>
-                <button id="send-message">
-                  <i class="fa-solid fa-paper-plane"></i>Lähetä
-                </button>
+                <div class="send-message-container">
+                  <button id="decline-message">Peruuta</button>
+                  <button id="send-message">
+                    <i class="fa-solid fa-paper-plane"></i>Lähetä
+                  </button>
+                </div>
               </div>
             </div>
           </div>

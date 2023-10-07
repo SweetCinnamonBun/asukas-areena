@@ -108,14 +108,28 @@ img {
   color: white;
 }
 
+/* BOOKING HEADER */
+
+.booking-header-section {
+  background-color: white;
+  margin-inline: 2rem;
+  margin-block-start: 1rem;
+}
+
+.booking-header {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
 /* CALENDAR SECTION */
 .calendar-section {
   margin-block-start: 1.5rem;
-  padding-inline: 0.8rem 0.8rem;
+  padding-inline: 2rem 2em;
 }
 
 .calendar {
-  background-color: #fff0f5;
+  background-color: white;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
   box-shadow: 5px 5px 10px gray;
@@ -129,20 +143,17 @@ img {
 .calendar .month {
   display: flex;
   padding: 1rem;
-}
-
-.month div {
-  flex: 1 1 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .month .container {
-  display: flex;
   align-items: center;
   font-size: 2.2rem;
 }
 
 #year {
-  margin-inline-start: 1rem;
+  margin-inline-start: 0.2rem;
 }
 
 .month .container2 {
@@ -194,13 +205,21 @@ img {
 }
 
 .calendar .previous-day {
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 
+.calendar .previous-day a {
+  color: transparent;
+}
+
 .calendar .next-day {
-  background-color: white;
+  background-color: transparent;
   border: none;
+}
+
+.calendar .next-day a {
+  color: transparent;
 }
 
 .calendar-grid div {
@@ -229,8 +248,8 @@ img {
   color: white;
 }
 
-.calendar .important {
-  background-color: #ffb000;
+.calendar .red {
+  background-color: #dd482e;
   padding: 1rem;
 }
 
@@ -246,4 +265,74 @@ img {
   border-radius: 0.5rem;
   background-color: #161817;
   color: whitesmoke;
+}
+
+.meanings {
+  margin-block-start: -2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.meanings span {
+  font-size: 1.2rem;
+}
+
+.blue-mark {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: #16385b;
+  margin-inline-end: 0.5rem;
+  margin-inline-start: 1rem;
+  border-radius: 0.2rem;
+}
+
+.red-mark {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: rgb(184, 66, 66);
+  border-radius: 0.2rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 0.5rem;
+}
+
+.available-times-section {
+  margin-inline: 2rem;
+  background-color: white;
+  margin-block-start: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-time-container {
+  padding: 2rem;
+}
+
+.available-times-section i {
+  font-size: 1.6rem;
+}
+
+.available-times-section span {
+  font-size: 1.6rem;
+}
+
+.chevron-div {
+  border: 1px solid black;
+  padding: 0.5rem 0.8rem;
+  margin-inline-end: 1rem;
+}
+
+.select-time-dropdown {
+  background-color: white;
+  margin-inline: 2rem;
+  margin-block: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  overflow: scroll;
+  height: 275px;
+}
+
+.select-time-dropdown .container p {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid black;
 }
