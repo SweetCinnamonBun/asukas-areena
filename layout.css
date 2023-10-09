@@ -489,7 +489,7 @@ font-size: 1.5rem;
 
 /*Responsive*/
 
-@media (max-width: 880px) {
+@media (max-width: 780px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
@@ -508,4 +508,8 @@ font-size: 1.5rem;
 		margin-left: 0;
 	}
 
+}
+
+span img{
+  width: 150px;
 }
