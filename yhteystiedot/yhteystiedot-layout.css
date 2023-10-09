@@ -14,11 +14,37 @@ html {
 }
 
 .logo img {
-  max-height: 5rem;
+  max-height: 2.8rem;
 }
 
 .dropdown-content {
   display: none;
+}
+
+.navbar-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: medium;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color: white;
+  height: 6rem;
+}
+
+.navbar-desktop a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-items {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.navbar-items-container {
+  margin-right: 8rem;
 }
 
 /* Contact and map section */
