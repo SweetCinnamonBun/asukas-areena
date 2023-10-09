@@ -54,6 +54,10 @@ html {
   flex-direction: row;
   height: 100vh;
   background-color: #b9c4df;
+  background-image: url(/images/piha.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact-info {
@@ -62,9 +66,18 @@ html {
 }
 
 .contact-box {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-size: large;
   text-align: center;
+  background: #b9c4df;
+  padding: 3rem;
+  border-radius: 10px;
+  margin-left: 3rem;
+  opacity: 0.9;
+}
+
+.contact-box h2 {
+  padding-bottom: 1rem;
 }
 
 .map-box {
@@ -83,15 +96,14 @@ html {
     height: 100vh;
   }
   .map-box {
-    padding-top: 0;
-    height: 100%;
-    background: inherit;
+    height: 50%;
+    margin-top: -2rem;
   }
-  .contact-box {
-    margin-bottom: 3rem;
-  }
+
   .contact-info {
     padding-top: 2rem;
+    margin-right: 3rem;
+    align-items: center;
   }
 
   /* NAVBAR SECTION*/
@@ -159,9 +171,13 @@ html {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .map-box {
-    height: 90%;
+    height: 95%;
+  }
+
+  .contact-info {
+    margin-top: 4rem;
   }
 
   /* NAVBAR SECTION*/
