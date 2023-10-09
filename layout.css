@@ -21,7 +21,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
+
 
 /* Style the button */
 .dropdown-button {
@@ -326,6 +328,17 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 
 .footer-distributed{
@@ -513,3 +526,5 @@ font-size: 1.5rem;
 span img{
   width: 150px;
 }
+
+
