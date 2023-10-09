@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viestit</title>
+    <title>Palvelupyynnöt</title>
     <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="layout-messages.css" />
+    <link rel="stylesheet" href="layout-service-request.css" />
     <script
       src="https://kit.fontawesome.com/9680ed3927.js"
       crossorigin="anonymous"
@@ -44,17 +44,17 @@
       </section>
       <div class="select-messaging-desktop">
         <div class="flex1">
-          <div class="viestit-desktop">Viestit</div>
+          <div class="viestit-desktop">
+            <a href="/messages/messages.html">Viestit</a>
+          </div>
           <div class="tiedotteet-desktop">
             <a href="/announcements/announcement.html">Tiedotteet</a>
           </div>
-          <div class="palvelupyynnöt-desktop">
-            <a href="/service-request/service-request.html">Palvelupyynnöt</a>
-          </div>
+          <div class="palvelupyynnöt-desktop">Palvelupyynnöt</div>
         </div>
         <div class="flex2">
           <button class="write-new-service-button-desktop">
-            Uusi Palvelupyyntö
+            <i class="fa-solid fa-pencil"></i>Uusi Palvelupyyntö
           </button>
           <button class="write-message">
             <i class="fa-solid fa-pencil"></i>Uusi viesti
@@ -65,19 +65,17 @@
         <section class="messages-section">
           <div class="messages-container">
             <div class="select-messaging">
-              <div class="viestit">Viestit</div>
+              <div class="viestit">
+                <a href="/messages/messages.html">Viestit</a>
+              </div>
               <div class="tiedotteet">
                 <a href="/announcements/announcement.html">Tiedotteet</a>
               </div>
-              <div class="palvelupyynnöt">
-                <a href="/service-request/service-request.html"
-                  >Palvelupyynnöt</a
-                >
-              </div>
+              <div class="palvelupyynnöt">Palvelupyynnöt</div>
             </div>
             <div class="write-new-message">
               <button class="write-new-service-button">
-                Uusi Palvelupyyntö
+                <i class="fa-solid fa-pencil"></i>Uusi Palvelupyyntö
               </button>
               <button class="write-new-message-button">
                 <i class="fa-solid fa-pencil"></i>Uusi Viesti
@@ -85,8 +83,8 @@
             </div>
             <div class="all-messages">
               <div class="message-title-amount">
-                <span class="message-amount">Viestit</span>
-                <span class="amount">(40)</span>
+                <span class="message-amount">Palvelupyynnöt</span>
+                <span class="amount">(10)</span>
               </div>
               <div class="new-messages-amount">
                 <p><span>3</span> uutta viestiä</p>

@@ -95,6 +95,7 @@ img {
   background-color: white;
   display: block;
   padding: 2rem 0;
+  height: 100vh;
 }
 
 .read-message-top-bar {
@@ -149,13 +150,16 @@ img {
 }
 
 .file {
-  border: 1px solid blue;
+  border: 2px solid #424242;
   display: grid;
   align-items: center;
   grid-template-columns: min-content 1fr min-content;
   margin-inline: 2rem;
   margin-block-end: 1rem;
   padding-block: 1rem;
+  background-color: #bde0ff;
+  border-radius: 15px;
+  width: 375px;
 }
 
 #paperclip {
@@ -183,4 +187,28 @@ img {
   padding: 1rem 1.5rem;
   margin-inline-end: 0.8rem;
   font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 660px) {
+  .read-message-desktop {
+    padding: 2rem 1.5rem;
+    width: 84%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .read-message-desktop {
+    padding: 2rem 1.5rem;
+    width: 77%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .read-message-desktop {
+    padding: 2rem 1.5rem;
+    width: 69%;
+    margin: auto;
+  }
 }
