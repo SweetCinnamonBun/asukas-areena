@@ -40,7 +40,11 @@ html {
 
 .navbar-items {
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 0.4rem;
+}
+
+.navbar-items:hover {
+  text-decoration: underline;
 }
 
 .navbar-items-container {
@@ -136,6 +140,7 @@ html {
   }
 
   .dropdown-content {
+    z-index: 1;
     position: absolute;
     top: 7rem;
     right: 1.5rem;
@@ -213,6 +218,7 @@ html {
 
   /* Style the dropdown content (hidden by default) */
   .dropdown-content {
+    z-index: 1;
     position: absolute;
     top: 7rem;
     right: 1.5rem;
