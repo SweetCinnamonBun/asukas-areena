@@ -83,14 +83,24 @@
         <section class="booking-title-section">
           <h1>Ajanvaraus</h1>
           <div class="bookings">
-            <span>Tehdyt ajanvaraukset</span>
+            <span class="ajanvarauksen-nimi">Kaikki sauna varaukset</span>
+            <i class="fa-solid fa-plus"></i>
           </div>
         </section>
         <section class="booking-header-section">
           <header class="booking-header">
-            <i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i>
-            <h1>Saunavuorot</h1>
-            <i class="fa-solid fa-circle-chevron-right"></i>
+            <i
+              id="chevron-left-header"
+              class="fa-solid fa-circle-chevron-right fa-rotate-180"
+            ></i>
+            <div class="booking-header-container">
+              <i id="booking-icon-header" class="fa-solid fa-shower"></i>
+              <h1>Sauna</h1>
+            </div>
+            <i
+              id="chevron-right-header"
+              class="fa-solid fa-circle-chevron-right"
+            ></i>
           </header>
         </section>
         <section>
@@ -125,7 +135,7 @@
                 <div class="calendar-day"><a href="#">3</a></div>
                 <div class="calendar-day"><a href="#">4</a></div>
                 <div class="calendar-day"><a href="#">5</a></div>
-                <div class="calendar-day"><a href="#">6</a></div>
+                <div class="calendar-day selected"><a href="#">6</a></div>
                 <div class="calendar-day"><a href="#">7</a></div>
                 <div class="calendar-day"><a href="#">8</a></div>
                 <div class="calendar-day"><a href="#">9</a></div>
@@ -134,17 +144,17 @@
                 <div class="calendar-day"><a href="#">12</a></div>
                 <div class="calendar-day"><a href="#">13</a></div>
                 <div class="calendar-day"><a href="#">14</a></div>
-                <div class="calendar-day"><a href="#">15</a></div>
-                <div class="calendar-day"><a href="#">16</a></div>
-                <div class="calendar-day"><a href="#">17</a></div>
+                <div class="calendar-day full"><a href="#">15</a></div>
+                <div class="calendar-day full"><a href="#">16</a></div>
+                <div class="calendar-day full"><a href="#">17</a></div>
                 <div class="calendar-day"><a href="#">18</a></div>
                 <div class="calendar-day">
                   <a href="#" class="marked">19</a>
                 </div>
                 <div class="calendar-day"><a href="#">20</a></div>
-                <div class="calendar-day"><a href="#">21</a></div>
-                <div class="calendar-day red"><a href="#">22</a></div>
-                <div class="calendar-day red"><a href="#">23</a></div>
+                <div class="calendar-day full"><a href="#">21</a></div>
+                <div class="calendar-day full"><a href="#">22</a></div>
+                <div class="calendar-day full"><a href="#">23</a></div>
                 <div class="calendar-day"><a href="#">24</a></div>
                 <div class="calendar-day"><a href="#">25</a></div>
                 <div class="calendar-day"><a href="#">26</a></div>
@@ -173,6 +183,16 @@
             </div>
           </section>
         </section>
+        <section class="show-current-datetime-section">
+          <div class="show-current-datetime">
+            <p>Valitsemasi päivä:</p>
+            <div>
+              <span class="weekday">Keskiviikko</span>
+              <span class="day-month">6.Syyskuuta</span>
+              <span class="year">2023</span>
+            </div>
+          </div>
+        </section>
         <section class="current-time-selection">
           <div class="current-selection">
             <i class="fa-regular fa-clock"></i>
@@ -194,7 +214,7 @@
               <p>12:00 - 13:00</p>
               <p>13:00 - 14:00</p>
               <p>14:00 - 15:00</p>
-              <p>15:00 - 16:00</p>
+              <p class="time-marked">15:00 - 16:00</p>
               <p>16:00 - 17:00</p>
               <p>17:00 - 18:00</p>
               <p>19:00 - 20:00</p>
@@ -205,10 +225,23 @@
         </section>
         <section class="book-selected-time-section">
           <button class="book-selected-time">Varaa aika</button>
+          <div id="popup" class="popup">
+            <!-- <div>
+              <p>Saunavuoro</p>
+              <span>15:00 - 16:00</span>
+              <span>Keskiviikko 6.Syyskuuta</span>
+              <span>2023</span>
+            </div> -->
+            <h2>Ajanvaraus Onnistui!</h2>
+            <div class="close-btn">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
         </section>
       </div>
     </div>
     <script src="/scripts/main.js"></script>
     <script src="/scripts/calendar.js"></script>
+    <script src="/scripts/booking.js"></script>
   </body>
 </html>

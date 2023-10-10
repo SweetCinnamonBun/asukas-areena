@@ -73,11 +73,27 @@ body {
 }
 
 .booking-title-section h1 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 
 .booking-title-section span {
   font-size: 1.2rem;
+  padding-inline-end: 1rem;
+  padding-block-start: 0.1rem;
+}
+
+.bookings {
+  display: flex;
+  align-items: center;
+  margin-block-start: 0.4rem;
+}
+
+.bookings span {
+  font-size: 1.2rem;
+}
+
+.bookings i {
+  font-size: 1.6rem;
 }
 
 /* BOOKING HEADER */
@@ -92,12 +108,21 @@ body {
 }
 
 .booking-header {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.booking-header-container {
+  display: flex;
+  margin-inline-end: 1rem;
+}
+
+.booking-header-container i {
+  margin-inline-end: 0.4rem;
 }
 
 /* CALENDAR SECTION */
@@ -123,7 +148,7 @@ body {
   display: flex;
   padding: 1rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .month .container {
@@ -141,15 +166,18 @@ body {
   justify-content: end;
 }
 
-#chevron-left,
 #chevron-right {
   font-size: 1.4rem;
   padding-block: 1.2rem;
-  padding-inline: 1.4rem;
-  margin-inline-start: 1rem;
-  border-radius: 0.5rem;
-  background-color: #16385b;
-  color: white;
+  color: black;
+  margin-inline-end: 1.6rem;
+}
+
+#chevron-left {
+  font-size: 1.4rem;
+  padding-block: 1.2rem;
+  color: black;
+  margin-inline-start: 1.6rem;
 }
 
 #calendar-icon {
@@ -210,8 +238,12 @@ body {
   border: 1px solid black;
 }
 
-.calendar-grid div:hover {
-  transform: translateY(-0.3rem);
+.calendar-grid .calendar-day:hover {
+  border: 4px solid black;
+}
+
+.calendar-grid .selected {
+  border: 4px solid black;
 }
 
 .calendar-grid a {
@@ -274,13 +306,39 @@ body {
   margin-inline-end: 0.5rem;
 }
 
+.show-current-datetime-section {
+  margin-block-start: 3.7rem;
+  margin-inline: 2rem;
+  font-size: 1.3rem;
+}
+
+.show-current-datetime {
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.show-current-datetime div {
+  border-bottom: 2px dotted #161817;
+}
+
+.show-current-datetime div > * {
+  padding-left: 0.5rem;
+  color: #072eff;
+}
+
+.show-current-datetime span:first-of-type {
+  padding: 0;
+}
+
 .current-time-selection {
   background: linear-gradient(
     90deg,
     rgba(26, 48, 154, 1) 8%,
     rgba(8, 202, 241, 1) 95%
   );
-  margin-block-start: 3.4rem;
+  margin-block-start: 2.5rem;
   margin-inline: 2rem;
   border-radius: 1.2rem;
   display: flex;
@@ -331,7 +389,8 @@ body {
 }
 
 .chevron-div {
-  border: 1px solid black;
+  border: 1px solid #cec0c0;
+  border-radius: 0.6rem;
   padding: 0.5rem 0.8rem;
   margin-inline-end: 1rem;
 }
@@ -355,6 +414,8 @@ body {
 .book-selected-time-section {
   display: flex;
   justify-content: center;
+  margin-block-start: 3.4rem;
+  position: relative;
 }
 
 .book-selected-time {
@@ -366,9 +427,62 @@ body {
   border-radius: 8px;
 }
 
+.popup {
+  width: 299px;
+  height: 40px;
+  background-color: #9ffdaa;
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, bottom 0.9s;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.close-btn {
+  padding: 1rem 1.5rem;
+  height: 100%;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #1ac614;
+}
+/* 
+.popup div {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  display: flex;
+  align-items: center;
+} */
+
+.popup h2 {
+  font-size: 1.6rem;
+}
+
+.popup p {
+  font-size: 1.4rem;
+}
+
+.open-popup {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* Media queries */
 
 /* Mobile */
+
+@media only screen and (min-width: 398px) {
+  .show-current-datetime-section {
+    font-size: 1.6rem;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contact-grid {
