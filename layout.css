@@ -327,6 +327,17 @@ body {
   font-size: 1.4rem;
 }
 
+/*Cards */
+.card{
+  background-color: #b9c4df;
+  padding: 10px;
+  margin: 1rem;
+  font-size: larger;
+  width: 10rem;
+  display: flex;
+ 
+  
+}
 
 
 
