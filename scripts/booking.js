@@ -9,6 +9,10 @@ const blueMark = document.querySelector(".blue-mark");
 const showCurrentDatetTimeChildren = document.querySelectorAll(".show-current-datetime div > * ");
 const imagePlace = document.querySelector(".image-figure img");
 const xy = document.querySelectorAll(".full");
+const divs = document.querySelectorAll(".select-time-dropdown .time > *");
+
+
+
 
 xy.forEach(x => {
     x.setAttribute("style", "background-color:#dd482e;");
@@ -29,7 +33,7 @@ bookingChevronLeft.addEventListener("click", () => {
     currentTimeSection.style.background = "linear-gradient(90deg, rgb(13, 123, 30) 29%, rgb(81, 215, 91) 79%)";
     blueMark.style.backgroundColor = "#9ae69a";
     showCurrentDatetTimeChildren.forEach(x => {
-        x.style.color = "green";
+        x.style.color = "#0b6203";
     });
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
@@ -84,7 +88,7 @@ bookingChevronRight.addEventListener("click", () => {
     currentTimeSection.style.background = "linear-gradient(90deg, rgb(13, 123, 30) 29%, rgb(81, 215, 91) 79%)";
     blueMark.style.backgroundColor = "#9ae69a";
     showCurrentDatetTimeChildren.forEach(x => {
-        x.style.color = "green";
+        x.style.color = "#0b6203";
     });
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
