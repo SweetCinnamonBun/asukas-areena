@@ -7,8 +7,12 @@ const bookingIconHeader = document.querySelector("#booking-icon-header");
 const currentTimeSection = document.querySelector(".current-time-selection");
 const blueMark = document.querySelector(".blue-mark");
 const showCurrentDatetTimeChildren = document.querySelectorAll(".show-current-datetime div > * ");
-
+const imagePlace = document.querySelector(".image-figure img");
 const xy = document.querySelectorAll(".full");
+const divs = document.querySelectorAll(".select-time-dropdown .time > *");
+
+
+
 
 xy.forEach(x => {
     x.setAttribute("style", "background-color:#dd482e;");
@@ -29,14 +33,14 @@ bookingChevronLeft.addEventListener("click", () => {
     currentTimeSection.style.background = "linear-gradient(90deg, rgb(13, 123, 30) 29%, rgb(81, 215, 91) 79%)";
     blueMark.style.backgroundColor = "#9ae69a";
     showCurrentDatetTimeChildren.forEach(x => {
-        x.style.color = "green";
+        x.style.color = "#0b6203";
     });
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
     
     document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki pesutupa varaukset";
-
+    imagePlace.setAttribute("src" , "/images/pesutupa2.jpg");
     } else {
         bookingHeaderH1.textContent = "Sauna";
     document.querySelectorAll(".calendar-day").forEach(x => {
@@ -52,6 +56,7 @@ bookingChevronLeft.addEventListener("click", () => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
     document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki sauna varaukset";
+    imagePlace.setAttribute("src" , "/images/sauna2.webp");
     }
 
 });
@@ -72,6 +77,7 @@ bookingChevronRight.addEventListener("click", () => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
     document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki sauna varaukset";
+    imagePlace.setAttribute("src" , "/images/sauna2.webp");
     }
     else if (bookingHeaderH1.textContent === "Sauna") {
         bookingHeaderH1.textContent = "Pesutupa";
@@ -82,12 +88,13 @@ bookingChevronRight.addEventListener("click", () => {
     currentTimeSection.style.background = "linear-gradient(90deg, rgb(13, 123, 30) 29%, rgb(81, 215, 91) 79%)";
     blueMark.style.backgroundColor = "#9ae69a";
     showCurrentDatetTimeChildren.forEach(x => {
-        x.style.color = "green";
+        x.style.color = "#0b6203";
     });
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
     document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki pesutupa varaukset";
+    imagePlace.setAttribute("src" , "/images/pesutupa2.jpg");
     }
 });
 
