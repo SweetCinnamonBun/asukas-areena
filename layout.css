@@ -100,7 +100,6 @@ body {
 /* TOP-CONTAINER */
 
 .top-container {
-  background-color: blue;
   width: 80%;
   margin: auto;
   margin-block-start: 2rem;
@@ -386,7 +385,7 @@ body {
 }
 
 .calendar .important {
-  background-color: #ffb000;
+  background-color: #fb683b;
   padding: 1rem;
 }
 
@@ -417,7 +416,7 @@ body {
 .announcement-grid {
   /* display: grid;
   grid-template-columns: 1.9fr 1fr; */
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: auto;
   margin-block-start: 5rem;
@@ -428,8 +427,6 @@ body {
 }
 
 .another-grid {
-  grid-column: 2 / 3;
-  grid-row: 1 / -1;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -441,13 +438,16 @@ body {
   margin: auto;
   /* grid-column: 1 / 2;
   grid-row: 1 / -1; */
-  margin-block-start: 8rem;
+  margin-block-start: 3.6rem;
 }
 
 .announcements-section h1 {
   font-size: 3rem;
   position: absolute;
-  top: 0;
+  top: -12px;
+  background-color: black;
+  color: white;
+  padding: 1rem 0.5rem;
 }
 
 .announcement {
@@ -467,6 +467,11 @@ body {
   border-radius: 8px;
   font-family: "Rubik", sans-serif;
   background-color: black;
+  color: white;
+}
+
+.read-more a {
+  text-decoration: none;
   color: white;
 }
 
@@ -517,11 +522,27 @@ body {
   border-radius: 8px;
 }
 
+.upcoming-booking-sauna {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bbb6b6;
+  padding-block: 0.5rem;
+  border-right: 7px solid rgb(0, 23, 128);
+
+  border-radius: 8px;
+}
+
+.upcoming-booking-sauna .time {
+  font-size: 1.5rem;
+}
+
 .booking-month {
   font-size: 1.5rem;
   padding: 1rem 0.4rem;
   border-right: 1px solid #bbb6b6;
   text-align: center;
+  width: 54px;
 }
 
 .upcoming-booking .time {
@@ -534,6 +555,16 @@ body {
   background-color: #67e43a;
   border-radius: 8px;
   margin-inline-end: 1rem;
+  width: 70px;
+}
+
+.sauna {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.7rem;
+  background-color: #04abf9;
+  border-radius: 8px;
+  margin-inline-end: 1rem;
+  width: 70px;
 }
 
 /* ANNOUNCEMENTS SECTION */
@@ -768,26 +799,23 @@ span img {
 
 /* Media queries */
 
-/* Mobile */
-
-@media only screen and (max-width: 1155px) {
-  .top-container {
+@media only screen and (min-width: 300px) {
+  .container-mobile {
+    display: flex;
     flex-wrap: wrap;
   }
 
-  .temperature-section {
-  }
-}
-
-@media only screen and (max-width: 1010px) {
   .calendar-mobile {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
-    width: 80%;
+    width: 96%;
     margin: auto;
     margin-block-start: 4rem;
     position: relative;
+  }
+
+  .calendar-section {
+    flex: 1 1 100%;
   }
 
   .calendar-mobile h1 {
@@ -795,6 +823,9 @@ span img {
     font-size: 3rem;
     margin-left: -0.4rem;
     margin-bottom: 1.3rem;
+    background: #0b0e62e5;
+    padding: 1rem 1.2rem;
+    color: white;
   }
 
   .calendar-grid {
@@ -802,27 +833,147 @@ span img {
   }
 
   .upcoming {
-    flex: 1 1 50%;
-    margin-inline-start: 1.6rem;
+    flex: 1 1 62%;
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    height: 336.7px;
+    height: 334px;
     padding-right: 0.7rem;
+    margin-block-start: 2rem;
   }
 
   .announcement-grid {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .calendar-mobile {
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .calendar-mobile {
+    width: 69%;
+  }
+}
+
+@media only screen and (min-width: 764px) {
+  .announcement-grid {
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  .calendar-mobile {
+    width: 63.9%;
+  }
+}
+
+@media only screen and (min-width: 809px) {
+  .calendar-section {
+    flex: 1 1 41%;
+  }
+
+  .container-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .calendar-mobile {
+    width: 96%;
+  }
+
+  .upcoming {
+    margin-block-start: 0;
+    margin-inline-start: 1rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .calendar-section {
+    flex: 1 1 41%;
+  }
+
+  .container-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .calendar-mobile {
+    width: 96%;
+  }
+
+  .upcoming {
+    margin-block-start: 0;
+    margin-inline-start: 1rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 934px) {
+  .top-container {
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1222px) {
+  .top-container {
+    width: 96%;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .top-container {
+    width: 66%;
+  }
+
+  .announcement-grid {
+    width: 66%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .hero .heading {
+    font-size: 4.2rem;
+  }
+
+  .hero .user {
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  .top-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1011px) {
+  .announcement-grid {
     flex-direction: column;
+    margin-block-start: 4rem;
+    width: 96%;
   }
   .another-grid {
     display: none;
+  }
+
+  .another-grid .upcoming {
+    height: 500px;
   }
   .announcements-section {
     order: 1;
   }
 
   .announcements-section h1 {
-    top: 3.4rem;
+    top: -8px;
+    background-color: black;
+    padding: 1rem 0.5rem;
+    color: white;
   }
 
   .calendar-section {
@@ -830,7 +981,7 @@ span img {
   }
 }
 
-@media only screen and (min-width: 1011px) {
+@media only screen and (min-width: 1010px) {
   .calendar-mobile {
     display: none;
   }
