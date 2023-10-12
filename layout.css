@@ -182,7 +182,6 @@ body {
 .service-request-section:hover {
   box-shadow: 5px 5px 15px rgb(53, 52, 52);
 }
-
 .service-request {
   display: flex;
   flex-direction: column;
@@ -222,6 +221,10 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.temperature-section:hover {
+  box-shadow: 5px 5px 15px rgb(53, 52, 52);
 }
 
 .temperature-section figure {
@@ -275,6 +278,10 @@ body {
   position: absolute;
   bottom: 2.3rem;
   left: 11.8rem;
+}
+
+.temperature-section:hover {
+  box-shadow: 5px 5px 15px rgb(53, 52, 52);
 }
 /* CALENDAR SECTION */
 .calendar-section {

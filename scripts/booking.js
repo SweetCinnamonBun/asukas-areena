@@ -11,12 +11,13 @@ const imagePlace = document.querySelector(".image-figure img");
 const xy = document.querySelectorAll(".full");
 const divs = document.querySelectorAll(".select-time-dropdown .time > *");
 
-
+const heading = document.querySelector(".heading");
+heading.setAttribute("style", "background-color:#0e4e93");
 
 
 xy.forEach(x => {
     x.setAttribute("style", "background-color:#dd482e;");
-})
+});
 
 
 chevronDiv.addEventListener("click", function (event){
@@ -39,8 +40,8 @@ bookingChevronLeft.addEventListener("click", () => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
     
-    document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki pesutupa varaukset";
     imagePlace.setAttribute("src" , "/images/pesutupa2.jpg");
+    heading.setAttribute("style", "background-color:#0e932f;")
     } else {
         bookingHeaderH1.textContent = "Sauna";
     document.querySelectorAll(".calendar-day").forEach(x => {
@@ -55,8 +56,8 @@ bookingChevronLeft.addEventListener("click", () => {
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
-    document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki sauna varaukset";
     imagePlace.setAttribute("src" , "/images/sauna2.webp");
+    heading.setAttribute("style", "background-color:#0e4e93");
     }
 
 });
@@ -76,8 +77,8 @@ bookingChevronRight.addEventListener("click", () => {
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
     })
-    document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki sauna varaukset";
     imagePlace.setAttribute("src" , "/images/sauna2.webp");
+    heading.setAttribute("style", "background-color:#0e4e93");
     }
     else if (bookingHeaderH1.textContent === "Sauna") {
         bookingHeaderH1.textContent = "Pesutupa";
@@ -92,9 +93,9 @@ bookingChevronRight.addEventListener("click", () => {
     });
     xy.forEach(x => {
         x.setAttribute("style", "background-color:#dd482e;");
-    })
-    document.querySelector(".ajanvarauksen-nimi").textContent = "Kaikki pesutupa varaukset";
+    });
     imagePlace.setAttribute("src" , "/images/pesutupa2.jpg");
+    heading.setAttribute("style", "background-color:#0e932f;");
     }
 });
 
