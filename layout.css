@@ -188,8 +188,8 @@ body {
   width: 80%;
   margin: auto;
   height: auto;
-  margin-block-start: 4rem;
-  margin-block-end: 6rem;
+  margin-block-start: 3rem;
+  margin-block-end: 2rem;
   position: relative;
   column-gap: 1.1rem;
 }
