@@ -281,10 +281,11 @@ span img {
 @media screen and (max-width: 767px) {
   .contact-grid {
     display: block;
-    height: 100vh;
+    height: 200vh;
   }
   .map-box {
-    display: none;
+    height: 60%;
+    padding-top: 0rem;
   }
 
   .contact-info {
