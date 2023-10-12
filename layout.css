@@ -65,10 +65,7 @@ body {
 .hero-section {
   background-color: #4a6677;
   width: 100%;
-<<<<<<< HEAD
   margin: auto;
-=======
->>>>>>> Roman
 }
 
 .hero {
@@ -247,7 +244,6 @@ body {
   margin-block-start: 1.4rem;
 }
 
-<<<<<<< HEAD
 .announcement-grid {
   display: grid;
   grid-template-columns: 1.9fr 1fr;
@@ -258,13 +254,13 @@ body {
   margin-block-end: 2rem;
   position: relative;
   column-gap: 1.1rem;
-=======
+}
+
 .temperature-section .degree {
   position: absolute;
   font-size: 4.2rem;
   top: 8.6rem;
   left: 5.2rem;
->>>>>>> Roman
 }
 
 .temperature-section > p:nth-child(2) {
