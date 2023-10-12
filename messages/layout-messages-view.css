@@ -63,6 +63,20 @@ body {
 
 /* MESSAGE SECTION */
 
+.go-back-container {
+  padding: 1.5rem 1rem;
+}
+
+.go-back {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  background-color: #1c1a1a;
+  color: white;
+  margin-block-end: 1rem;
+  border-radius: 8px;
+}
+
 .read-message-desktop {
   background-color: white;
   display: block;

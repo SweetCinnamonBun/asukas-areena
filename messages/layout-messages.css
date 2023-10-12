@@ -408,7 +408,7 @@ input {
   display: none;
   font-size: 1.2rem;
   position: absolute;
-  border: 1px solid slateblue;
+  border: 1px solid rgb(94, 92, 92);
   top: 3.2rem;
   right: 2rem;
   background-color: white;
@@ -421,6 +421,10 @@ input {
   padding: 1.5rem 2rem;
   font-family: "Rubik", sans-serif;
   border-bottom: 1px solid gray;
+}
+
+.ellipsis-dropdown li:hover {
+  background-color: rgb(78, 76, 76);
 }
 
 .ellipsis-dropdown li a {
@@ -547,6 +551,12 @@ input {
   border-radius: 8px;
   background-color: #333;
   color: white;
+}
+
+.read-message-buttons button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .new-message-modal {
