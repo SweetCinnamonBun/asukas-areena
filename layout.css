@@ -65,7 +65,10 @@ body {
 .hero-section {
   background-color: #4a6677;
   width: 100%;
+<<<<<<< HEAD
   margin: auto;
+=======
+>>>>>>> Roman
 }
 
 .hero {
@@ -75,6 +78,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero .heading {
+  font-size: 5.4rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(9, 9, 9, 0.74);
+}
+
+.hero .user {
+  margin-block-start: 4rem;
+  padding: 1rem;
+
+  background-color: rgba(9, 9, 9, 0.74);
+  font-size: 3.2rem;
+  color: white;
 }
 
 /* TOP-CONTAINER */
@@ -97,6 +121,10 @@ body {
   border-radius: 8px;
 }
 
+.messages-section:hover {
+  box-shadow: 5px 5px 15px rgb(37, 37, 37);
+}
+
 .messages {
   margin-block-start: 1.7rem;
 }
@@ -106,6 +134,7 @@ body {
   font-size: 7.4rem;
   top: 6rem;
   right: 11.1rem;
+  color: #3434db;
 }
 
 .messages-section h1 {
@@ -121,10 +150,10 @@ body {
 }
 
 .lower-div span span {
-  color: red;
+  color: #060af7;
 }
 
-.open-message-preview {
+/* .open-message-preview {
   position: absolute;
   bottom: -2.2rem;
   right: 13rem;
@@ -132,7 +161,7 @@ body {
   border-radius: 50%;
   border: none;
   margin-block-start: 0.3rem;
-}
+} */
 
 .open-message-preview i {
   color: #db1010;
@@ -149,7 +178,13 @@ body {
 .service-request-section {
   width: 299px;
   height: 200px;
-  background-color: yellow;
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+}
+
+.service-request-section:hover {
+  box-shadow: 5px 5px 15px rgb(53, 52, 52);
 }
 
 .service-request {
@@ -158,30 +193,61 @@ body {
   height: 100%;
 }
 
-.service-request span {
-  margin-block-start: 6.6rem;
-  font-size: 1.4rem;
+.service-request span span {
+  color: orange;
 }
 
-.service-request #wrench {
+#wrench {
+  position: absolute;
   font-size: 7.4rem;
+  top: 6rem;
+  right: 11.1rem;
+  color: orange;
 }
 
 .service-request-section h1 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   text-align: center;
+  margin-block-start: 1.4rem;
+}
+
+.service-request .lower-div {
+  position: absolute;
+  bottom: 2.9rem;
+  left: 7.4rem;
+  font-size: 1.4rem;
 }
 
 .temperature-section {
   width: 299px;
   height: 200px;
-  background-color: rgb(59, 59, 40);
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.temperature-section figure {
+  width: 9.8rem;
+  height: 11rem;
+  position: absolute;
+  top: 5rem;
+  left: 14rem;
+}
+
+.temperature-section figure img {
+  width: 100%;
+  height: 100%;
 }
 
 .temperature-section h1 {
-  font-size: 1.6rem;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-block-start: 1.4rem;
 }
 
+<<<<<<< HEAD
 .announcement-grid {
   display: grid;
   grid-template-columns: 1.9fr 1fr;
@@ -192,18 +258,29 @@ body {
   margin-block-end: 2rem;
   position: relative;
   column-gap: 1.1rem;
+=======
+.temperature-section .degree {
+  position: absolute;
+  font-size: 4.2rem;
+  top: 8.6rem;
+  left: 5.2rem;
+>>>>>>> Roman
 }
 
-.another-grid {
-  grid-column: 2 / 3;
-  grid-row: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 1.3rem;
-  align-items: center;
+.temperature-section > p:nth-child(2) {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5rem;
+  z-index: 1;
+  left: 7rem;
 }
 
+.temperature-section > p:nth-child(5) {
+  font-size: 1.9rem;
+  position: absolute;
+  bottom: 2.3rem;
+  left: 11.8rem;
+}
 /* CALENDAR SECTION */
 .calendar-section {
   width: 320px;
@@ -213,7 +290,6 @@ body {
   background-color: white;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
-  box-shadow: 5px 5px 10px gray;
 }
 
 .calendar h1 {
@@ -355,10 +431,33 @@ body {
   height: 100%;
 }
 
+.announcement-grid {
+  /* display: grid;
+  grid-template-columns: 1.9fr 1fr; */
+  width: 80%;
+  margin: auto;
+  height: auto;
+  margin-block-start: 5rem;
+  margin-block-end: 6rem;
+  position: relative;
+  display: flex;
+  /* column-gap: 1.1rem; */
+}
+
+.another-grid {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1.3rem;
+  align-items: center;
+}
+
 .announcements-section {
   margin: auto;
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
+  /* grid-column: 1 / 2;
+  grid-row: 1 / -1; */
   margin-block-start: 8rem;
 }
 
@@ -384,6 +483,8 @@ body {
   padding: 0.5rem 0.8rem;
   border-radius: 8px;
   font-family: "Rubik", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 /* .announcement:first-child {
@@ -685,6 +786,72 @@ span img {
 /* Media queries */
 
 /* Mobile */
+
+@media only screen and (max-width: 1155px) {
+  .top-container {
+    flex-wrap: wrap;
+  }
+
+  .temperature-section {
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .calendar-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    margin-block-start: 4rem;
+    position: relative;
+  }
+
+  .calendar-mobile h1 {
+    flex: 1 1 100%;
+    font-size: 3rem;
+    margin-left: -0.4rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .calendar-grid {
+    grid-auto-rows: 30px;
+  }
+
+  .upcoming {
+    flex: 1 1 50%;
+    margin-inline-start: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 336.7px;
+    padding-right: 0.7rem;
+  }
+
+  .announcement-grid {
+    flex-direction: column;
+  }
+  .another-grid {
+    display: none;
+  }
+  .announcements-section {
+    order: 1;
+  }
+
+  .announcements-section h1 {
+    top: 3.4rem;
+  }
+
+  .calendar-section {
+    width: 325px;
+  }
+}
+
+@media only screen and (min-width: 1011px) {
+  .calendar-mobile {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contact-grid {
