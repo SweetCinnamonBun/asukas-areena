@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsukasAreena</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="a-view.css" />
+    <script
+      src="https://kit.fontawesome.com/9680ed3927.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="navbar-section">
+        <nav class="navbar-desktop">
+          <a class="logo" href="/index.html">
+            <img src="/images/AA logo.png" alt="logo"
+          /></a>
+          <div class="navbar-items-container">
+            <i class="fa-regular fa-envelope" style="color: #ffffff"></i>
+            <a class="navbar-items" href="/messages/messages.html">Viestit</a>
+            <i class="fa-solid fa-bullhorn" style="color: #ffffff"></i>
+            <a class="navbar-items" href="/announcements/announcement.html"
+              >Tiedotteet</a
+            >
+            <i
+              class="fa-solid fa-clipboard-question"
+              style="color: #ffffff"
+            ></i>
+            <a class="navbar-items" href="/service-request/service-request.html"
+              >Palvelupyynnöt</a
+            >
+            <i class="fa-regular fa-calendar-days" style="color: #ffffff"></i
+            ><a class="navbar-items" href="/booking/booking.html">
+              Ajanvaraus</a
+            >
+            <i class="fa-solid fa-address-card" style="color: #ffffff"></i>
+            <a class="navbar-items" href="yhteystiedot.html">Yhteystiedot</a>
+          </div>
+          <a href="/login/login.html"
+            ><i
+              class="fa-solid fa-arrow-right-from-bracket"
+              style="color: #ffffff"
+            ></i
+          ></a>
+        </nav>
+        <nav class="navbar-mobile">
+          <div class="hidden-div"></div>
+          <a class="logo" href="/index.html">
+            <img src="/images/AA logo.png" alt="logo"
+          /></a>
+          <button class="dropdown-button">
+            <i class="fa-solid fa-bars" style="color: #000000"></i>
+          </button>
+        </nav>
+        <div class="dropdown-content">
+          <!-- Dropdown items go here -->
+          <a class="dropdown-items" href="/messages/messages.html">Viestit</a>
+          <a class="dropdown-items" href="/announcements/announcement.html"
+            >Tiedotteet</a
+          >
+          <a class="dropdown-items" href="/booking/booking.html"
+            >Palvelupyynnöt</a
+          >
+          <a class="dropdown-items" href="/booking/booking.html">Ajanvaraus</a>
+          <a class="dropdown-items" href="/yhteystiedot/yhteystiedot.html"
+            >Yhteystiedot</a
+          >
+          <a class="dropdown-items" href="/login/login.html">Kirjaudu ulos</a>
+        </div>
+      </section>
+      <section class="read-message-desktop">
+        <section class="read-message-container">
+          <div class="go-back-container">
+            <a class="go-back" href="/messages/messages.html">Takaisin</a>
+          </div>
+          <div class="read-message-top-bar">
+            <h1>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aspernatur alias totam animi?
+            </h1>
+          </div>
+          <div class="tiedote-kuva-container">
+            <figure class="tiedote-kuva">
+              <img src="/images/Talkoot.png" alt="" />
+            </figure>
+          </div>
+          <div class="sender">
+            <span>Lähettäjä:</span>
+            <span>Maija Majava</span>
+          </div>
+          <div class="read-message-timestamp">
+            <span>Lähetetty:</span>
+            <span>Perjantai</span>
+            <span>13.lokakuuta</span>
+            <span>2023</span>
+            <span>11:00</span>
+          </div>
+          <div class="read-message-body">
+            <p class="greeting">Hei, Asukas!</p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit ea ad perferendis dicta facilis, ipsa impedit
+              obcaecati dolor mollitia quia earum officia vitae aliquam a error
+              possimus voluptatum neque rem at aperiam culpa voluptate illum
+              dolorem odio. Velit ipsam sint vel ab adipisci recusandae nemo et
+              reprehenderit odio vitae necessitatibus illum maiores ad commodi
+              vero, quam, minus temporibus molestias?
+            </p>
+            <p class="end">Terveisin, Hannes Mattila</p>
+          </div>
+          <div class="files-container">
+            <div class="file">
+              <i id="paperclip" class="fa-solid fa-paperclip"></i>
+              <div class="container">
+                <p class="filename">Image.jpg</p>
+                <p class="filesize">2.2MB</p>
+              </div>
+              <i id="download" class="fa-solid fa-download"></i>
+            </div>
+            <div class="file">
+              <i id="paperclip" class="fa-solid fa-paperclip"></i>
+              <div class="container">
+                <p class="filename">Image.jpg</p>
+                <p class="filesize">2.2MB</p>
+              </div>
+              <i id="download" class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+          <div class="read-message-buttons">
+            <button class="reply">
+              Vastaa <i class="fa-solid fa-reply"></i>
+            </button>
+            <button class="forward">
+              Lähetä Edelleen <i class="fa-solid fa-share"></i>
+            </button>
+            <!-- <button class="archive">
+              Arkistoi <i class="fa-solid fa-box-archive"></i>
+            </button>
+            <button class="delete">
+              Poista <i class="fa-solid fa-trash"></i>
+            </button> -->
+          </div>
+        </section>
+      </section>
+    </div>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
