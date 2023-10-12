@@ -64,7 +64,7 @@ body {
 /* HERO SECTION */
 .hero-section {
   background-color: #4a6677;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -185,7 +185,7 @@ body {
 .announcement-grid {
   display: grid;
   grid-template-columns: 1.9fr 1fr;
-  width: 80%;
+  width: 90%;
   margin: auto;
   height: auto;
   margin-block-start: 3rem;
