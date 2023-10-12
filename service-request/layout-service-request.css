@@ -471,6 +471,146 @@ input {
   background-color: white;
   display: none;
   border-radius: 0.8rem;
+  overflow: scroll;
+}
+
+.read-message-container {
+  padding: 2.9rem;
+}
+
+.read-message-container > h1:nth-child(1) {
+  font-size: 2.4rem;
+  margin-block-end: 1rem;
+}
+
+.service-container-2 {
+  background-color: #f5ca7c;
+}
+
+.created {
+  font-size: 1.8rem;
+  padding: 1.5rem 3.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.created > span:nth-child(2) {
+  color: black;
+}
+
+.Status {
+  font-size: 1.8rem;
+  padding: 1.5rem 3.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Status > span:nth-child(2) {
+  color: #25a025;
+}
+
+.type {
+  padding: 1.5rem 3.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.house-number {
+  padding: 1.5rem 3.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seuranta {
+  padding-block-start: 1.5rem;
+  font-size: 1.8rem;
+  padding-inline: 3.6rem;
+  padding-block-end: 0.9rem;
+}
+
+.fa-circle-check {
+  color: #229722;
+}
+
+.following {
+  padding: 1.5rem 3.6rem;
+  font-size: 1.5rem;
+}
+
+.following i {
+  margin-inline-start: 2rem;
+}
+.description-h1 {
+  padding: 1.5rem 3.6rem;
+  font-size: 1.9rem;
+}
+
+.description {
+  padding: 1.5rem 3.6rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  background-color: #ffe7bb;
+  margin-inline: 3.8rem;
+  border-radius: 1rem;
+}
+
+.description-heading {
+  font-size: 1.5rem;
+  margin-block-end: 0.9rem;
+}
+
+.lower-hidden-div {
+  font-size: 2.7rem;
+  visibility: hidden;
+}
+
+.end {
+  margin-block-start: 0.9rem;
+}
+
+.reply {
+  font-size: 2.5rem;
+  margin-block-start: 2.6rem;
+  margin-block-end: 1.5rem;
+}
+
+.reply-h1 {
+  margin-block-end: 1rem;
+}
+
+.reply-end {
+  margin-block-start: 0.9rem;
+}
+
+.reply-container {
+  background-color: #f5ca7c;
+}
+
+.reply-h1 {
+  margin-block-end: 1rem;
+}
+
+.top-reply-container {
+  font-size: 1.7rem;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reply-area {
+  padding: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  background-color: #ffe7bb;
+  margin-inline: 1.6rem;
+  border-radius: 1rem;
+}
+
+.hidden-1 {
+  font-size: 4rem;
+  visibility: hidden;
 }
 
 .read-message-top-bar {

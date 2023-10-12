@@ -145,7 +145,7 @@ body {
   padding-block: 1rem;
   background-color: #bde0ff;
   border-radius: 15px;
-  width: 375px;
+  width: 330px;
 }
 
 #paperclip {
@@ -173,6 +173,16 @@ body {
   padding: 1rem 1.5rem;
   margin-inline-end: 0.8rem;
   font-size: 1.4rem;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.read-message-buttons button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
 
 @media only screen and (min-width: 660px) {
@@ -183,10 +193,26 @@ body {
   }
 }
 
+@media only screen and (min-width: 760px) {
+  .read-message-desktop {
+    padding: 2rem 1.5rem;
+    width: 74%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .read-message-desktop {
+    padding: 2rem 1.5rem;
+    width: 64%;
+    margin: auto;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .read-message-desktop {
     padding: 2rem 1.5rem;
-    width: 77%;
+    width: 60%;
     margin: auto;
   }
 }
@@ -194,7 +220,15 @@ body {
 @media only screen and (min-width: 1050px) {
   .read-message-desktop {
     padding: 2rem 1.5rem;
-    width: 69%;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .read-message-desktop {
+    padding: 2rem 1.5rem;
+    width: 40%;
     margin: auto;
   }
 }

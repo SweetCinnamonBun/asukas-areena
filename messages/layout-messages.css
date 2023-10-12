@@ -250,6 +250,10 @@ body {
   border-bottom: 1px solid gray;
 }
 
+.sort-dropdown-content li:hover {
+  background-color: rgb(100, 97, 97);
+}
+
 .sort-dropdown-content li a {
   text-decoration: none;
   color: black;
@@ -654,12 +658,12 @@ input {
 
 .save-for-later {
   border: none;
-  background-color: #ffcc70;
-  color: black;
+  background-color: #0f0f0f;
+  color: white;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   font-size: 1.4rem;
-  font-weight: medium;
+  font-weight: bold;
 }
 
 .new-service-modal {
