@@ -227,10 +227,13 @@ body {
   position: relative;
   padding: 0.4rem 1rem;
   border-radius: 50%;
+  transition-property: background;
+  transition-duration: 0.5s;
 }
 
 #sort-icon:hover {
-  background-color: gray;
+  background-color: #2e2c2c;
+  color: white;
 }
 
 .sort-dropdown-content {
@@ -619,12 +622,32 @@ input {
 
 .new-message-buttons {
   display: flex;
-  justify-content: space-between;
   margin-block-start: 3rem;
+  flex-wrap: wrap;
+}
+
+.new-message-buttons > * {
+  flex: 1 1 100%;
+}
+
+.send-message-container {
+  order: -1;
+  display: flex;
+  justify-content: end;
+  margin-block-end: 1rem;
+}
+
+.send-message-container > * {
+  flex: 1 1 100%;
 }
 
 .close-modal {
   align-self: end;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
 }
 
 .new-message-modal::backdrop {

@@ -245,10 +245,13 @@ body {
   position: relative;
   padding: 0.4rem 1rem;
   border-radius: 50%;
+  transition-property: background;
+  transition-duration: 0.5s;
 }
 
 #sort-icon:hover {
-  background-color: gray;
+  background-color: #2e2c2c;
+  color: white;
 }
 
 .sort-dropdown-content {
@@ -260,6 +263,10 @@ body {
   right: 1.4rem;
   background-color: white;
   border-radius: 0.5rem;
+}
+
+.sort-dropdown-content li:hover {
+  background-color: rgb(92, 89, 89);
 }
 
 .sort-dropdown-content li {
@@ -426,7 +433,7 @@ input {
   display: none;
   font-size: 1.2rem;
   position: absolute;
-  border: 1px solid slateblue;
+  border: 1px solid rgb(99, 97, 97);
   top: 3.2rem;
   right: 2rem;
   background-color: white;
@@ -445,6 +452,10 @@ input {
   text-decoration: none;
   color: black;
   font-weight: 300;
+}
+
+.ellipsis-dropdown li:hover {
+  background-color: #837f7f;
 }
 
 .message-body .username {
@@ -771,6 +782,14 @@ input {
   align-self: end;
 }
 
+.close-service-modal {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 7.8px;
+}
+
 .new-message-modal::backdrop {
   background-color: black;
   opacity: 0.5;
@@ -921,7 +940,7 @@ input {
 }
 
 .service-send-button {
-  background-color: #362fd9;
+  background-color: #f79619;
   border: none;
   padding: 1rem 1.5rem;
   color: white;
