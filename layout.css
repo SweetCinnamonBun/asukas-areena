@@ -115,6 +115,7 @@ body {
   background-color: white;
   position: relative;
   border-radius: 8px;
+  border: 1px solid #bbb6b6;
 }
 
 .messages-section:hover {
@@ -130,7 +131,7 @@ body {
   font-size: 7.4rem;
   top: 6rem;
   right: 11.1rem;
-  color: #3434db;
+  color: #2c2c33;
 }
 
 .messages-section h1 {
@@ -146,7 +147,7 @@ body {
 }
 
 .lower-div span span {
-  color: #060af7;
+  color: rgb(207, 18, 18);
 }
 
 /* .open-message-preview {
@@ -177,6 +178,7 @@ body {
   background-color: white;
   position: relative;
   border-radius: 8px;
+  border: 1px solid #bbb6b6;
 }
 
 .service-request-section:hover {
@@ -189,7 +191,7 @@ body {
 }
 
 .service-request span span {
-  color: orange;
+  color: rgb(207, 18, 18);
 }
 
 #wrench {
@@ -197,7 +199,7 @@ body {
   font-size: 7.4rem;
   top: 6rem;
   right: 11.1rem;
-  color: orange;
+  color: #2c2c33;
 }
 
 .service-request-section h1 {
@@ -221,6 +223,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  border: 1px solid #bbb6b6;
 }
 
 .temperature-section:hover {
@@ -1059,7 +1062,7 @@ span img {
     right: 1.5rem;
     width: 95%;
     display: none;
-    background-color: #2c5781;
+    background-color: #004384;
     border-radius: 8px;
   }
 
@@ -1111,7 +1114,7 @@ span img {
 
   .navbar-mobile {
     display: block;
-    background-color: #2c5781;
+    background-color: #004384;
     height: 4rem;
     padding: 1rem;
     display: flex;
@@ -1137,7 +1140,7 @@ span img {
     right: 1.5rem;
     width: 35%;
     display: none;
-    background-color: #2c5781;
+    background-color: #004384;
     border-radius: 8px;
   }
 
