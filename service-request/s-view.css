@@ -16,7 +16,7 @@ body {
 /* NAVBAR SECTION*/
 
 .navbar-section {
-  background-color: #2c5781;
+  background-color: #004384;
 }
 
 .navbar-mobile {
@@ -499,7 +499,7 @@ input {
 }
 
 .service-container-2 {
-  background-color: #f5ca7c;
+  background-color: #77adff;
 }
 
 .created {
@@ -521,7 +521,7 @@ input {
 }
 
 .Status > span:nth-child(2) {
-  color: #25a025;
+  color: #50ff50;
 }
 
 .type {
@@ -546,7 +546,7 @@ input {
 }
 
 .fa-circle-check {
-  color: #229722;
+  color: #50ff50;
 }
 
 .following {
@@ -568,7 +568,7 @@ input {
   padding: 1.5rem 3.6rem;
   font-size: 1.4rem;
   line-height: 2.5rem;
-  background-color: #ffe7bb;
+  background-color: #bbdcff;
   margin-inline: 3.8rem;
   border-radius: 1rem;
 }
@@ -602,7 +602,7 @@ input {
 }
 
 .reply-container {
-  background-color: #f5ca7c;
+  background-color: #77adff;
 }
 
 .reply-h1 {
@@ -620,7 +620,7 @@ input {
   padding: 1.6rem;
   font-size: 1.4rem;
   line-height: 2.3rem;
-  background-color: #ffe7bb;
+  background-color: #bbdcff;
   margin-inline: 1.6rem;
   border-radius: 1rem;
 }
@@ -1099,7 +1099,7 @@ input {
     right: 1.5rem;
     width: 95%;
     display: none;
-    background-color: #2c5781;
+    background-color: #004384;
     border-radius: 8px;
   }
 
@@ -1151,7 +1151,7 @@ input {
 
   .navbar-mobile {
     display: block;
-    background-color: #2c5781;
+    background-color: #004384;
     height: 4rem;
     padding: 1rem;
     display: flex;
